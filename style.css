@@ -1,0 +1,210 @@
+body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+      .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #111111;
+        width: 1200px;
+        height: 500px;
+        gap: 50px;
+    
+    }
+      .box1,.box2{
+        height: 300px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: 1s;
+        transform-style: preserve-3d;
+    }
+      .red1,.red2{
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        backface-visibility: hidden;
+        font-size: 25px;
+        height: 300px;
+        width: 200px;
+        border-radius: 10px;
+    }
+      .red1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 30px;
+      transform: rotateX(0deg);
+      background-color:   #D6273B;;
+    }
+      .red2{
+      background-color: green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 30px;
+      transform: rotateX(180deg);
+    }
+      .box1:hover{
+        transform: rotateX(180deg);
+    }
+
+
+   
+      .orange1,.orange2{
+        position:absolute;
+        height: 50%;
+        width: 50%;
+        backface-visibility: hidden;
+        height: 300px;
+        width: 200px;
+        border-radius: 10px;
+    }
+      .box2:hover{
+        transform: rotatey(180deg)
+    }
+      .orange1{
+        transform: rotatey(0deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        background-color:  #486CE3;
+    }
+      .orange2{
+        transform: rotatey(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        background-color: #F9A602;
+    }
+    
+    .box3{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        transform-style: preserve-3d;
+        animation: box3animate 5s infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .blue1,.blue2{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        backface-visibility: hidden;
+        height: 300px;
+        width: 200px;
+        font-size: 30px;
+        color: white;
+        border-radius: 10px;
+    }
+    .blue1{
+        background-color:   #7C157F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateX(0deg);
+    }
+    .blue2{
+        background-color:  #1E7F80;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotatex(180deg);
+
+    }
+    @keyframes box3animate {
+        0%{
+            transform: rotatex(0deg);
+        }
+        30%{
+            transform: rotatex(0deg);
+        }
+        50%{
+            transform: rotatex(180deg);
+        }
+        90%{
+            transform: rotatex(180deg);
+        }
+        100%{
+            transform: rotatex(360deg);
+        }
+    }
+    
+    .box4{
+       position: relative;
+        height: 300px;
+        width: 200px;
+        transform-style: preserve-3d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         animation: box4animate 5s infinite;
+    }
+    .pink1{
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        backface-visibility: hidden;
+        height: 300px;
+        width: 200px;
+        border-radius: 10px;
+        font-size: 30px;
+        color: white;
+    }
+    .pink1{
+        background-color: #A1302C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotatey(0deg);
+    }
+    .pink2{
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        backface-visibility: hidden;
+        height: 300px;
+        width: 200px;
+        border-radius: 10px;
+        font-size: 30px;
+        color: white;
+    }
+    .pink2{
+        background-color: #F83093;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotatey(180deg);
+    }
+    @keyframes box4animate {
+        0%{
+            transform: rotatey(0deg);
+        }
+        30%{
+            transform: rotatey(0deg);
+        }
+        50%{
+            transform: rotatey(180deg);
+        }
+        90%{
+            transform: rotatey(180deg);
+        }
+        100%{
+            transform: rotatey(360deg);
+        }
+    }
+    
+
